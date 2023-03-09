@@ -43,7 +43,7 @@ int main() {
       
     // if any other choice was inputted then display Invalid Choice and continue the loop
     } else {
-      cout << "Invalid Choice" << endl;
+      cout << "Invalid Choices" << endl;
       continue;
     }
 
