@@ -1,5 +1,5 @@
 //******************************************************************
-//Description: Pig Latin. 
+//Description: This is a program that performs a C++ type string function depending on which one the user picks
 //Author: Jay Chong
 //COMSC 165 Section 5096
 //Date March 12th, 2023
@@ -19,6 +19,7 @@ void insert(char[]);
 void replace(char[]);
 void deleteChar(char[]);
 int search (char sourceString [], char targetString []);
+void exit(char[]);
 
 int main() {
     char option;
@@ -50,6 +51,8 @@ int main() {
             case 'r':
                 replace(buffer);
                 break;
+            case 'e':
+                return 0;
             default: cout << "Invalid" << endl;
         }
         cout << menu << endl;
@@ -162,3 +165,4 @@ int search (char sourceString [], char targetString []) {
     }
     return index;
 }
+
